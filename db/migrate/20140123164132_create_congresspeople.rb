@@ -1,16 +1,14 @@
 require_relative '../config'
 
-class CreateCongresspeople < ActiveRecord::Migration
+class CreateLegislators < ActiveRecord::Migration
   def up
     create_table :legislators do |t|
       t.string :title
       t.string :firstname
-      t.string :middlename
       t.string :lastname
       t.string :party
       t.string :state
       t.integer :district
-      t.integer :in_office
       t.string :gender
       t.integer :phone
       t.integer :fax
